@@ -6,6 +6,7 @@ import time
 
 my_email_id="jhondoe@gmail.com"
 password="a really good password"
+f=open("message","r")
 
 course_prefix="mca"
 number_prefix_list=['250','400','450','100']
@@ -43,8 +44,9 @@ s.starttls()
 s.login(my_email_id, password) 
   
 # message to be sent
-subject="Request to Join the INTER BIT Whatsapp Group"
-text_message="We the students of BIT Jaipur are forming an INTER BIT Whatsapp Group to be able to better understand each other and to communicate with each other for the betterment of our futures.\nPlease join the group with the link given here https://chat.whatsapp.com/D5U3dP5hN8AJUKPKIgOhko.\nIf you have already recieved this message, please ignore it. If you know someone who has not Recieved this Message, Please Invite them.\n\nThanking You\n\nAnand Mahesh" 
+subject="Request to Join the INTER BIT Telegram Group"
+text_message=f.readlines()
+text_message=''.join(text_message)
 message = 'subject: {}\n\n{}'.format(subject, text_message)
 
 for reciever_email_id in email_list:
