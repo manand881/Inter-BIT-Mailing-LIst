@@ -8,7 +8,7 @@ No special packages are required to run this script
 
 ## Usage
 
-Please use the script responsibly. I am not resposible for any communication that you may try to initiate or recieve. This is to be used only for academic purposes
+Please use the script responsibly. I am not resposible for any communication that you may try to initiate or recieve. This is to be used only for academic purposes.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
